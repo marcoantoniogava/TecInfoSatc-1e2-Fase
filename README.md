@@ -1,2 +1,2 @@
 # TecInfoSatc
-Repositório - Curso técnico em informática SATC
+Repositório - Curso técnico em informática SATC - 1° e 2° Fase.
