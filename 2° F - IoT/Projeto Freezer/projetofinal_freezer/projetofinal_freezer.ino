@@ -9,8 +9,8 @@
 #define WIFI_PASSWORD "12345678"
 
 // Credenciais do Bot Telegram
-#define BOT_TOKEN "7991659826:AAFRhDB0IZrC9VnrNxPJ_gT82PyIKO8Ma2E"
-#define CHAT_ID "8147771515"
+#define BOT_TOKEN "Token"
+#define CHAT_ID "ChatID"
 
 // Configurações do sensor DHT11
 #define DHTPIN 15        // PINO de dados do DHT11
