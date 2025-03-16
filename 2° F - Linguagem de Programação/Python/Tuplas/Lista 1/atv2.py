@@ -1,0 +1,11 @@
+primeiros = 'ignore', 'botafogo', 'fortaleza', 'flamengo', 'palmeiras', 'são paulo', 'cruzeiro', 'bahia', 'athletico-pr', 'atletico-mg', 'vasco da gama', 'bragantino', 'juventude', 'gremio', 'criciuma', 'internacional', 'vitoria', 'corinthians', 'fluminense', 'cuiabá', 'atletico-go'
+alfabetica = tuple(sorted(primeiros))
+print('****************')
+print(f'Os 5 primeiros colocados:\n{primeiros[1]}\n{primeiros[2]}\n{primeiros[3]}\n{primeiros[4]}\n{primeiros[5]}')
+print('****************')
+print(f'Os 4 últimos colocados:\n{primeiros[-5]}\n{primeiros[-4]}\n{primeiros[-3]}\n{primeiros[-2]}')
+print('****************')
+print(f'Em ordem alfabética: {alfabetica}')
+print('****************')
+print(f'O time na posição 11 é {primeiros[11]}')
+print('****************')

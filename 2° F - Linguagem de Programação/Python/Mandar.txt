@@ -1,0 +1,46 @@
+create database petshop;
+
+
+
+create table  produtos (
+codigo int(5) not null,
+preco float(8,2) not null,
+nome varchar(50) not null,
+estoque int(10) not null,
+primary  key (codigo));
+
+create table pets(
+codigo int(5) not null,
+nome varchar(50) not null,
+especie varchar(50) not null,
+raca varchar(50) not null,
+idade int(3) not null,
+primary key (codigo));
+
+create table servicos(
+codigo int(5) not null,
+tipo varchar(50) not null,
+descricao varchar(50) not null,
+horario time not null,
+preco float(8,2) not null,
+cod_pet  int(5) not null,
+primary key (codigo),
+foreign key (cod_pet) references pets(codigo));
+
+
+create table  clientes(
+codigo int(5) not null,
+nome  varchar(50) not null,
+cpf int(5) not null,
+cidade varchar(50) not null,
+estado varchar(50) not null,
+telefone int(10) not null,
+endereco varchar(50) not null,
+cod_pet int(5) not null,
+cod_servico int(5) not null,
+primary key (codigo),
+foreign key (cod_pet) references pets(codigo),
+foreign key (cod_servico) references servicos(codigo));
+
+
+
