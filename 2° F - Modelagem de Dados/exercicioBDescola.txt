@@ -1,0 +1,70 @@
+create database ESCOLA;
+
+create table estado (
+codigo int(5) not null,
+nome varchar(50) not null,
+primary key (codigo));
+
+create table curso (
+codigo int(5) not null,
+nome varchar(50) not null,
+primary key (codigo));
+
+create table cidade (
+codigo int(5) not null,
+nome varchar(50) not null,
+codestado int(5) not null,
+primary key (codigo));
+foreign key (codestado) references estado (codigo));
+
+create table aluno (
+codigo int(5) not null,
+nome varchar(50) not null,
+endereco varchar(50) not null,
+bairro varchar(50) not null,
+codcidade int(5) null,
+rg int(12) not null,
+cpf int(12) not null,
+telefone int(10) not null,
+email varchar(50) not null,
+codcurso int(5) not null,
+primary key (codigo),
+foreign key (codcidade) references cidade(codigo),
+foreign key (codcurso) references curso(codigo));
+
+create table disciplina (
+codigo int(5) not null,
+nome varchar(50) not null,
+ementa varhar(50) not null,
+nraulas int(5) not null,
+periodo varchar(50) not null,
+codcurso int(5) not null,
+codprofessor int(5) not null,
+primary key (codigo),
+foreign key (codcurso) references curso(codigo),
+foreign key (codprofessor) references professor(codigo));
+
+insert into estado(codigo,nome) values (1,"Santa Catarina");
+insert into estado(codigo,nome) values (2,"Paraná");
+insert into estado(codigo,nome) values (3,"Rio Grande do Sul");
+
+insert into cidade(codigo,nome,codestado) values (1,"Criciúma",1);
+insert into cidade(codigo,nome,codestado) values (2,"Porto Alegre",3);
+insert into cidade(codigo,nome,codestado) values (3,"Curitiba",2);
+
+insert into curso(codigo,nome) values (1,"Informática");
+insert into curso(codigo,nome) values (2,"Mecânica");
+insert into curso(codigo,nome) values (3,"Design");
+
+insert into aluno(codigo,nome,endereco,bairro,codcidade,datanasc,rg,cpf,nomepai,nomemae,telefone,email,codcurso)
+values (1,"Arthur Fernandes","Rua Rosita Finster","Jardim Angelica",1,"11/09/2005",
+12345,12345,"Luciano","Cris",99741234,"arthur@gmail.com",2);
+
+insert into aluno(codigo,nome,endereco,bairro,codcidade,datanasc,rg,cpf,nomepai,nomemae,telefone,email,codcurso)
+values (1,"Ana Paula","Avenida Centenario","Centro",1,"05/10/2006",
+64372,64372,"Carlos","Maria",43859425,"ana@gmail.com",3);
+
+insert into aluno(codigo,nome,endereco,bairro,codcidade,datanasc,rg,cpf,nomepai,nomemae,telefone,email,codcurso)
+values (1,"Ana Paula","Avenida Centenario","Centro",1,"05/10/2006",
+64372,64372,"Carlos","Maria",43859425,"ana@gmail.com",3);
+

@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Marco's Pizza (Pedidos)</title>
+        <link rel="icon" type="image/x-icon" href="logopizza.png">
+        <link rel="stylesheet" href="stylespizzaria.css">
+    </head>
+<body>
+    <div id="header">
+        <div id="headerconteudo">
+            <div id="logo">
+                <img src="logopizza.png" alt="Logo da Pizzaria">
+            </div>
+            <div id="nomepizzaria">
+                <h1>Marco's Pizza</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="indexhome.html">Home</a></li>
+                    <li><a href="indexpizzaria.html">Cardápio</a></li>
+                    <li><a href="indexpedidos.html">Pedidos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="corpo">
+        <div id="pedidos">
+            <p><u>Faça seu Pedido</u></p>
+        </div>
+        <div class="classformulario">
+            <h1>Informações - Clientes</h1>
+           <form name="formulario" method="post" action="">
+            Nome: <br>
+            <input type="text" name="nome" id="nome" size="50" required>
+            <br>
+            Endereço: <br>
+            <input type="text" name="endereco" id="endereco" size="50">
+            <br>
+            Cidade: <br>
+            <input type="text" name="cidade" id="cidade" size="50">
+            <br>
+            CEP: <br>
+            <input type="text" name="cep" id="cep" size="50">
+            <br>
+            Telefone Residencial: <br>
+            <input type="text" name="telres" id="telres" size="50">
+            <br>
+            CPF: <br>
+            <input type="text" name="cpf" id="cpf" size="50">
+            <br>
+            Bairro: <br>
+            <input type="text" name="bairro" id="bairro" size="50">
+            <br>
+            Estado: <br>
+            <select name="estado" id="estado">
+                <option value="NE"></option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                </select> <br>
+            Email: <br>
+            <input type="text" name="email" id="email" size="50">
+            <br>
+            Telefone Celular: <br>
+            <input type="text" name="telcell" id="telcell" size="50">
+            <br>
+            RG: <br>
+            <input type="text" name="rg" id="rg" size="50">
+            <br>
+         </div>
+        
+         <div class="classformulario">
+            <h1>Informações - Encomendas</h1>
+            Data de Entrega: <br>
+            <input type="date" name="data" id="data">
+            <br>
+            Horário de Entrega: <br>
+            <input type="time" name="hora" id="hora">
+            <br>
+            Tipo da Pizza: <br>
+            <select name="tipopizza" id="tipopizza">
+                <option value="NE"></option>
+                <option value="SA">Salgada</option>
+                <option value="DC">Doce</option>
+                </select>
+                <br>
+            Tamanho da Pizza: <br>
+            <select name="tamanhopizza" id="tamanhopizza">
+                <option value="NE"></option>
+                <option value="BR">Broto - R$: 32,90</option>
+                <option value="MD">Média - R$: 45,90</option>
+                <option value="GR">Grande - R$: 62,90</option>
+                <option value="GG">Gigante - R$: 78,90</option>
+                </select>
+                <br>
+            Sabor da Pizza: <br>
+            <input type="checkbox" name="sabor" id="sabor" size="10" value="CAL">Calabresa
+            <input type="checkbox" name="sabor" id="sabor" size="10" value="MAR">Marguerita
+            <input type="checkbox" name="sabor" id="sabor" size="10" value="MUS">Mussarela
+            <input type="checkbox" name="sabor" id="sabor" size="10" value="PTG">Portuguesa
+            <input type="checkbox" name="sabor" id="sabor" size="10" value="NPT">Napolitana
+            <input type="checkbox" name="sabor" id="sabor" size="10" value="FRG">Frango
+            <br>
+            Tipo da borda: <br>
+            <select name="tipoborda" id="tipoborda">
+                <option value="NE"></option>
+                <option value="SA">Salgada</option>
+                <option value="DC">Doce</option>
+            </select>
+            <br>
+            Sabor da Borda:
+            <select name="saborborda" id="saborborda">
+                <option value="NE"></option>
+                <option value="CA">Catupiry</option>
+                <option value="RQ">Requeijão</option>
+                <option value="CH">Cheddar</option>
+                <option value="NT">Nuttela</option>
+                <option value="LT">Leite Condensado</option>
+            </select>
+            <br><br><br><br><br><br><br><br>
+            <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+            <input type="reset" name="limpar" id="limpar" value="LIMPAR">
+        </form>
+        </div>
+    </div>
+    <div id="rodape">
+        <div class="rodapeinfo">
+            <h3>Endereço: Rua João Pedro Antônio, 250.</h3>
+            <h3>Contato: @marcospizza Tel: 48 923149876</h3>
+        </div>
+    </div>
+</body>
+</html>

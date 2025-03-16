@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Matricula</title>
+<link rel="icon" type="image/x-icon" href="iconesatc.png">
+</head>
+<body bgcolor="FFFFFF">
+<img src="logosatc.jpg" width="150" height="75">
+<br><br>
+<p align="center">
+<font face='arial' size="7" color="000000"><u><b>Matrícula - REDES SOCIAIS PARA NEGÓCIOS</b></u></font>
+</p> <br>
+<p align="center">
+<font face='arial' size="6" color="000000"><u><b>INFORMAÇÕES PESSOAIS</b></u></font>
+</p> <br>
+<form name="formulario" method="post" action="">
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Nome: </b></font><br>
+<input type="text" name="nome" id="nome" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Endereço: </b></font><br>
+<input type="text" name="endereco" id="endereco" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Cidade: </b></font><br>
+<input type="text" name="cidade" id="cidade" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>CEP: </b></font><br>
+<input type="text" name="cep" id="cep" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>E-mail: </b></font><br>
+<input type="text" name="email" id="email" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Telefone Residencial: </b></font><br>
+<input type="text" name="telres" id="telres" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Sexo: </b></font><br>
+<input type="radio" name="sexo" id="sexo_m" size="100" value="Masculino" required>
+<font face="arial" size="5" color="000000">Masculino</font>
+<input type="radio" name="sexo" id="sexo_f" size="100" value="Feminino" required>
+<font face="arial" size="5" color="000000">Feminino</font>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Estado Civil: </b></font><br>
+<input type="radio" name="estadocivil" id="estadocivil_solt" size="100" value="Solteiro" required>
+<font face="arial" size="5" color="000000">Solteiro</font>
+<input type="radio" name="estadocivil" id="estadocivil_casa" size="100" value="Casado" required>
+<font face="arial" size="5" color="000000">Casado</font>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Data de Nascimento: </b></font><br>
+<input type="date" name="data" id="data" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Bairro: </b></font><br>
+<input type="text" name="bairro" id="bairro" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Estado: </b></font><br>
+<select name="estado" id="estado" required>
+<option value="NE"></option>
+<option value="SC"><b>Santa Catarina</b></option>
+<option value="PR"><b>Paraná</b></option>
+<option value="RS"><b>Rio Grande do Sul</b></option>
+<option value="SP"><b>São Paulo</b></option>
+<option value="RJ"><b>Rio de Janeiro</b></option>
+</select>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>País: </b></font><br>
+<select name="pais" id="pais" required>
+<option value="NE"></option>
+<option value="BR"><b>Brasil</b></option>
+<option value="EUA"><b>Estados Unidos</b></option>
+<option value="UR"><b>Uruguai</b></option>
+<option value="ARG"><b>Argentina</b></option>
+<option value="BOL"><b>Bolívia</b></option>
+</select>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>CPF: </b></font><br>
+<input type="text" name="cpf" id="cpf" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Telefone Celular: </b></font><br>
+<input type="text" name="telcel" id="telcel" size="100" required>
+</p>
+<p align="center">
+<font face="arial" size="6" color="000000"><b><u>ESCOLARIDADE</u></b></font><br>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Nível de Educação: </b></font><br>
+<input type="checkbox" name="ensfund" id="ensfund" size="10" value="E" ><font face='arial'>Ensino Fundamental</font>
+<input type="checkbox" name="enstec" id="enstec" size="10" value="T" ><font face='arial'>Ensino Técnico</font>
+<input type="checkbox" name="ensfac" id="ensfac" size="10" value="F" ><font face='arial'>Faculdade</font>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Curso Escolhido: </b></font><br>
+<select name="curso" id="curso" required>
+<option value="NE"></option>
+<option value="INFO"><b>Informática</b></option>
+<option value="MEC"><b>Mecânica</b></option>
+<option value="IA"><b>Inteligência Artificial</b></option>
+<option value="RD"><b>Redes Sociais Para Negócios</b></option>
+<option value="DG"><b>Design Gráfico</b></option>
+</select>
+</p>
+<p align="center">
+<font face="arial" size="5" color="000000"><b>Período: </b></font><br>
+<input type="radio" name="matutino" id="matutino" size="100" value="Matutino" >
+<font face="arial" size="5" color="000000">Matutino</font>
+<input type="radio" name="vespertino" id="vespertino" size="100" value="Vespertino" >
+<font face="arial" size="5" color="000000">Vespertino</font>
+<input type="radio" name="noturno" id="noturno" size="100" value="Noturno">
+<font face="arial" size="5" color="000000">Noturno</font>
+</p>
+<br>
+<p align="center">
+</textarea>
+<input type="submit" name="enviar" id="enviar" value="ENVIAR">
+<input type="reset" name="limpar" id="limpar" value="LIMPAR">
+</p>
+
+
+</form>
+</body>
+</html>

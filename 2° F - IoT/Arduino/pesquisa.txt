@@ -1,0 +1,20 @@
+-O que é IoT?
+Internet of Things (IoT) é a interconexão de dispositivos físicos à internet, permitindo que esses dispositivos coletem, compartilhem e analisem dados entre si, sem intervenção humana direta. Exemplos incluem smart homes, sensores industriais e dispositivos vestíveis.
+
+-Aplicações usando IoT:
+Automação residencial (smart home): Controlar luzes, temperatura, e eletrodomésticos remotamente.
+Saúde (telemetria médica): Monitoramento de sinais vitais em tempo real.
+Agricultura de precisão: Sensores monitoram a umidade do solo e o crescimento das plantas, otimizando a irrigação.
+
+-Diferença entre Arduino e ESP32:
+Arduino: Plataforma de hardware de código aberto mais simples, com microcontroladores de baixo consumo. Ele tem menos poder de processamento e conectividade limitada (geralmente sem Wi-Fi ou Bluetooth).
+ESP32: Microcontrolador mais avançado, com suporte a Wi-Fi e Bluetooth integrados, processador dual-core, e mais memória, ideal para projetos IoT.
+
+-Como utilizar o ESP32 na Arduino IDE?
+
+Abra a Arduino IDE.
+Vá para File > Preferences.
+No campo "Additional Board Manager URLs", adicione o URL fornecido pela documentação oficial do ESP32 (disponível em fontes de instalação da placa).
+Em Tools > Board > Board Manager, pesquise por "ESP32" e clique em "Instalar".
+Depois de instalar, vá novamente para Tools > Board e selecione a placa ESP32.
+Com isso, o ESP32 está pronto para ser programado diretamente na Arduino IDE.

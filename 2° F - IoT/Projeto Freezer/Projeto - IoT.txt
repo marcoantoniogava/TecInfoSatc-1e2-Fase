@@ -1,0 +1,30 @@
+ideias projeto:
+
+1. Monitoramento de Temperatura (freezer para remedios)
+Objetivo: Usar um sensor DHT11 ou DHT22 para monitorar a temperatura e umidade do ambiente.a
+Funcionamento: O ESP32 coleta dados do sensor e envia para a nuvem. Se a temperatura exceder um limite configurado, ele envia uma notificação.
+Componentes: ESP32, sensor DHT11/DHT22.
+Aplicação: Pode ser usado para monitorar a temperatura de um quarto, escritório, ou até mesmo uma estufa.
+
+complementos:
+
+1. Monitoramento de Porta
+Objetivo: Adicionar uma funcionalidade para monitorar se a porta do freezer está aberta por muito tempo,
+o que pode influenciar a temperatura interna.
+Implementação: Use um sensor magnético (reed switch) para detectar se a porta está aberta,
+e configure um alerta se permanecer aberta por mais de um tempo pré-determinado.
+
+2.  Indicador de Status com LED RGB
+Objetivo: Monitorar visualmente a temperatura e a umidade.
+Implementação: Conecte um LED RGB ao ESP32. A cor do LED muda de acordo com o status do ambiente:
+verde para condições normais, amarelo para alertas, e vermelho para condições críticas.
+
+3. Servo para fechar a porta.
+
+Componentes:
+
+DHT11, ServoMotor, LED RGB, Sensor Magnético
+
+link bot telegram: https://youtu.be/gfWNIhjrCBk?si=Xxkq78FWGcrDRxW1
+
+link led rgb: https://youtu.be/KU3ACV9gMNU?si=n8hmttXPVofWI11r

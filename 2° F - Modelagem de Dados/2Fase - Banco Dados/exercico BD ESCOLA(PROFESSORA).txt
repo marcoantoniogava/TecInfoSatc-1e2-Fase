@@ -1,0 +1,208 @@
+1) Criar o Banco Dados
+
+create database escola;
+
+2) Criar as tabelas no BD escola
+
+create table estado (
+codigo   int(5)       not null, 
+nome     varchar(50)  not null,
+primary key (codigo));
+
+create table curso (
+codigo int(5)      not null,
+nome   varchar(50) not null,
+primary key (codigo));
+
+create table cidade (
+codigo     int(5)       not null, 
+nome       varchar(50)  not null,
+codestado  int(5)       not null,
+primary key (codigo),
+foreign key (codestado) references estado(codigo));
+
+create table aluno (
+codigo     int(5)       not null, 
+nome       varchar(50)  not null,
+endereco   varchar(50)  not null,
+bairro     varchar(50)  not null,
+codcidade  int(5)       not null,  
+datanasc   date         not null,
+rg         int(12)      not null,
+cpf        int(12)      not null,  
+nomepai    varchar(50)  not null,
+nomemae    varchar(50)  not null,
+telefone   int(10)      not null,
+email      varchar(50)  not null,
+codcurso   int(5)       not null,
+primary key (codigo),
+foreign key (codcidade) references cidade(codigo),
+foreign key (codcurso)  references curso(codigo));
+
+create table professor (
+codigo     int(5)       not null, 
+nome       varchar(50)  not null,
+endereco   varchar(50)  not null,
+bairro     varchar(50)  not null,
+codcidade  int(5)       not null,  
+rg         int(12)      not null,
+cpf        int(12)      not null,  
+telefone   int(10)      not null,
+email      varchar(50)  not null,
+codcurso   int(5)       not null,
+primary key (codigo),
+foreign key (codcidade) references cidade(codigo),
+foreign key (codcurso)  references curso(codigo));
+
+create table disciplina (
+codigo       int(5)       not null, 
+nome         varchar(50)  not null,
+ementa       varchar(50)  not null,
+nraulas      int(5)       not null,
+periodo      varchar(50)  not null,
+codcurso     int(5)       not null,
+codprofessor int(5)       not null,
+primary key (codigo),
+foreign key (codcurso) references curso(codigo),
+foreign key (codprofessor) references professor(codigo));
+
+-----------
+3) Comandos DML - Inserir 03 dados nas tabelas (INSERT)
+
+insert into estado(codigo,nome) values (1,"Santa Catarina");
+insert into estado(codigo,nome) values (2,"Paraná");
+insert into estado(codigo,nome) values (3,"Rio Grande do Sul");
+----------------
+insert into cidade(codigo,nome,codestado) values (1,"Criciúma",1);
+insert into cidade(codigo,nome,codestado) values (2,"Porto Alegre",3);
+insert into cidade(codigo,nome,codestado) values (3,"Curitiba",2);
+-----------------
+insert into curso(codigo,nome) values (1,"Informática");
+insert into curso(codigo,nome) values (2,"Mecânica");
+insert into curso(codigo,nome) values (3,"Design");
+----------------
+insert into aluno(codigo,nome,endereco,bairro,codcidade,datanasc,
+rg,cpf,nomepai,nomemae,telefone,email,codcurso)
+values (1,"Arthur Fernandes","Rua Rosita Finster","Jardim Angelica",1,"11/09/2005",
+12345,12345,"Luciano","Cris",99741234,"arthur@gmail.com",2);
+
+insert into aluno(codigo,nome,endereco,bairro,codcidade,datanasc,
+rg,cpf,nomepai,nomemae,telefone,email,codcurso)
+values (2,"Ana Paula","Avenida Centenario","Centro",1,"05/10/2006",
+54321,54321,"Carlos","Maria",3344556,"ana@gmail.com",3);
+
+insert into aluno(codigo,nome,endereco,bairro,codcidade,datanasc,
+rg,cpf,nomepai,nomemae,telefone,email,codcurso)
+values (3,"Andre Luiz","Rua Anita Garibaldi","Centro",1,"20/03/2007",
+223344,223344,"Luiz","Ana",778899,"andre@gmail.com",1);
+
+-----------------
+
+insert into professor(codigo,nome,endereco,bairro,codcidade,rg,cpf,
+telefone,email,codcurso)
+values (1,"Cris Pavei","Rua Rosita","Jardim Angelica",1,12345,12345,
+34331234,"cris@gmail.com",1);
+
+insert into professor(codigo,nome,endereco,bairro,codcidade,rg,cpf,
+telefone,email,codcurso)
+values (2,"Rafaela","Rua Anita","Centro",1,223344,223344,
+99743344,"rafaela@gmail.com",3);
+
+insert into professor(codigo,nome,endereco,bairro,codcidade,rg,cpf,
+telefone,email,codcurso)
+values (3,"Glauber","Av centenario","Prospera",1,556677,556677,
+34338899,"glauber@gmail.com",2);
+
+----------------
+insert into disciplina(codigo,nome,ementa,nraulas,periodo,codcurso,codprofessor)
+values (1,"Banco de Dados","Modelagem e criacao BD",3,"Vespertino",1,1);
+
+insert into disciplina(codigo,nome,ementa,nraulas,periodo,codcurso,codprofessor)
+values (2,"Fotografia","Criacao e tratamento imagens",5,"Vespertino",2,3);
+
+insert into disciplina(codigo,nome,ementa,nraulas,periodo,codcurso,codprofessor)
+values (3,"Usinagem","Projeto e fabricacao CNC",5,"Vespertino",3,2);
+
+-----------------
+ALTERAR CAMPOS (UPDATE)
+
+1) Alterar o Estado "Parana" para "Sao Paulo"
+
+UPDATE estado SET nome = "São Paulo"
+WHERE codigo = 2;
+
+2) Alterar a cidade "Curitiba" para "Campinas"
+
+UPDATE cidade SET nome = "Campinas"
+WHERE codigo = 3;
+
+3) Alterar o curso de "Design" para "Administracao"
+
+UPDATE curso SET nome = "Administração"
+WHERE codigo = 3;
+
+4) Alterar telefone,bairro aluno Ana Paula para ("Prospera"/12345)
+
+UPDATE aluno SET telefone=12345, bairro="Próspera"
+WHERE codigo = 2;
+
+5) Alterar endereco professor "Rafaela" para "Av.Centenario"
+
+UPDATE professor SET endereco = "Av.Centenario"
+WHERE  codigo in (2,3);
+
+6) Alterar nome,ementa da disciplina 2 para "Matematica 
+Financeira","Calculos e analises financeiras"
+
+UPDATE disciplina SET nome="Matematica Financeira", 
+                      ementa="Calculos e analises financeiras" 
+WHERE codigo = 2;
+
+---------------------------------------
+6) Apagar a disciplina de cod = 3
+
+DELETE from disciplina
+where codigo = 3;
+
+----------------------------------------
+7) Pesquisar com SELECT
+
+a) pesquisar todos os estados cadastrados
+
+select * from estado;
+
+b) pesquisar codigo e nome das cidades
+
+select codigo,nome from cidade;
+
+
+c) pesquisar nome do curso "Adm"
+
+select nome from curso 
+where nome like "Adm%";
+
+
+d) pesquisar nome do aluno com codigo 2,3
+
+select nome from aluno
+where codigo in (2,3);
+
+ou
+
+select nome from aluno
+where codigo >= 2 and codigo <= 3;
+
+ou
+select nome from aluno
+where codigo between 2 and 3;
+
+
+e) pesquisar codigo do aluno nulo ou não nulo(vazio)
+
+select codigo from aluno
+where nome is not null;
+
+
+
+
+

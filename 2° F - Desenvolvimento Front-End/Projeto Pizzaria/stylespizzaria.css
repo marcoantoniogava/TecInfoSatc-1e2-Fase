@@ -1,0 +1,148 @@
+body{
+background-image: url(bgpizzaria.jpg);
+background-size: 1920px 1740px;
+}
+#header{
+    padding: auto;
+}
+#logo img{
+    width: 150px;
+    border: 2px solid #e6837f;
+    border-radius: 10px;
+}
+#headerconteudo{
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px 20px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 0, 0);
+}
+#nomepizzaria{
+    flex: 2;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+}
+nav{
+    padding: auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    color: #da524d;
+    padding: 10px 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    color: #da524d;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #da524d;
+    background-color: #ec9491;
+    border-radius: 5px;
+}
+#corpo{
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 1200px;
+    height: 600px;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 0, 0);
+}
+#corpo h2{
+    width: 200px;
+    font-family: Verdana, sans-serif;
+    color: green;
+    font-size: 30px;
+}
+.pizza{
+    display: inline-block;
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+    font-size: 17px;
+}
+.pizza img{
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+    
+}
+#preços{
+    margin-left: 60px;
+    display: flex;
+}
+#preços h2{
+    margin-right: 60px;
+}
+#rodape{
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 1200px;
+    height: 60px;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+.rodapeinfo{
+    font-size: 20px;
+    display: flex;
+    font-family: Verdana, sans-serif;
+    gap: 50px;
+}
+#sobre{
+    width: 200px;
+    font-family: Verdana, sans-serif;
+    color: green;
+    font-size: 36px;
+}
+#sobreinfo{
+    margin-right: 30px;
+    font-size: 22px;
+    font-family: Verdana, sans-serif;
+    gap: 40px;
+}
+#pedidos{
+    width: 290px;
+    font-family: Verdana, sans-serif;
+    color: green;
+    font-size: 36px;
+    display: flex;
+}
+form{
+    font-family: Verdana, sans-serif;
+}
+.classformulario{
+    font-family: Verdana, sans-serif;
+    color: #000000;
+    font-size: 12px;
+    display: inline-block;
+    width: 500px;
+}
+.classformulario h1 {
+    color: #da524d;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
