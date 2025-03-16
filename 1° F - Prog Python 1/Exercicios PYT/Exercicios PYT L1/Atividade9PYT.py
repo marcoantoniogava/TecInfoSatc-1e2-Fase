@@ -1,0 +1,6 @@
+nome = input("digite nome: ")
+horas = int(input("digite horas trabalhadas: "))
+valorhora = int(input("digite o valor da hora: "))
+salariobruto = (horas * valorhora)
+salarioliquido = (salariobruto * 0.98)
+print("nome e salario final: ",nome,salarioliquido)

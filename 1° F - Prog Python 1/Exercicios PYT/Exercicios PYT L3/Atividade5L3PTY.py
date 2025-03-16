@@ -1,0 +1,6 @@
+nome = input("digite nome produto: ")
+preco = float(input("digite preço R$:"))
+percentual = float(input("digite % acrescimo: "))
+precofinal = preco + (preco * percentual / 100)
+print("nome produto: ",nome)
+print("preco final: ",precofinal)

@@ -1,0 +1,6 @@
+nome = input("digite seu nome: ")
+idade = int(input("digite sua idade: "))
+peso = float(input("digite seu peso: "))
+altura = float(input("digite sua altura: "))
+imc = (peso) / (altura * altura)
+print("imc calculado foi: ",imc)

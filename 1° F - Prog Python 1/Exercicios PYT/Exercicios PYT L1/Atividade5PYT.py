@@ -1,0 +1,5 @@
+nome = input("digite seu nome: ")
+cargo = input("digite seu cargo: ")
+salario = float(input("digite seu salario: "))
+novosalario = (salario * 1.05)
+print("novo salario: ",novosalario)

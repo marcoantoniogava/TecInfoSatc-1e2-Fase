@@ -1,0 +1,6 @@
+frase = input("digite a frase: ")
+fraseMA = frase.upper()
+print(fraseMA)
+fraseRE = frase.replace(" ","")
+print("frase em maiusculo: ",fraseMA)
+print("frase sem espaços: ",fraseRE)
