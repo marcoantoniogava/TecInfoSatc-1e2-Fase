@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" modified="2024-03-20T20:06:05.863Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ACZaOGzfcU_I062-yA8E" version="24.0.7" type="device">
+  <diagram name="Página-1" id="DsBYzwGyJ0Om0j9NbH0s">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-2" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="ac5E7X8e0sDbraJiWXkF-2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-4" value="sistema conta banco" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="315" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="ac5E7X8e0sDbraJiWXkF-4" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ac5E7X8e0sDbraJiWXkF-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ac5E7X8e0sDbraJiWXkF-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ac5E7X8e0sDbraJiWXkF-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-6" value="Cadastros, Processos, Consultas e Relatorios" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="295" y="200" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-10" value="consulta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="435" y="210" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-11" value="consulta extrato" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="490" y="230" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-12" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="ac5E7X8e0sDbraJiWXkF-11" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-13" value="consulta saldo" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="530" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-14" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="ac5E7X8e0sDbraJiWXkF-13" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-16" value="Procesos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="379" y="290" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-17" value="saques" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="315" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-19" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="380" y="330" as="sourcePoint" />
+            <mxPoint x="270" y="330" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-20" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="270" y="330" as="sourcePoint" />
+            <mxPoint x="270" y="430" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ac5E7X8e0sDbraJiWXkF-21" target="ac5E7X8e0sDbraJiWXkF-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-21" value="depositos" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="210" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-24" value="cadastros" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="210" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-25" value="cadastro clientes" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-26" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="ac5E7X8e0sDbraJiWXkF-25" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ac5E7X8e0sDbraJiWXkF-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-27" value="cadastro contas" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-30" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ac5E7X8e0sDbraJiWXkF-33">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="190" y="570" as="sourcePoint" />
+            <mxPoint x="350" y="570" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-32" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ac5E7X8e0sDbraJiWXkF-33">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="590" y="560" as="sourcePoint" />
+            <mxPoint x="560" y="570" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac5E7X8e0sDbraJiWXkF-33" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="370" y="550" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

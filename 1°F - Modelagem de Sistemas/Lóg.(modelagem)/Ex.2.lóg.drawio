@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2024-05-15T19:50:07.416Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="1mO-fJnQSo6xylvC-3hw" version="24.4.2" type="device">
+  <diagram id="Zw0Ttj7HdsxutydwHCSd" name="Página-1">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Oy84b5pCKv3BzQJfooqG-1" value="Atleta" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="110" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Oy84b5pCKv3BzQJfooqG-2" value="codigo&amp;nbsp; &amp;nbsp;PK&lt;div&gt;nome&lt;/div&gt;&lt;div&gt;cpf&lt;/div&gt;&lt;div&gt;rg&lt;/div&gt;&lt;div&gt;telefone&lt;/div&gt;&lt;div&gt;endereco&lt;/div&gt;&lt;div&gt;idade&lt;/div&gt;&lt;div&gt;categoria&lt;/div&gt;&lt;div&gt;peso&lt;/div&gt;&lt;div&gt;altura&lt;/div&gt;&lt;div&gt;esporte&lt;/div&gt;&lt;div&gt;cidade&lt;/div&gt;&lt;div&gt;país&lt;/div&gt;&lt;div&gt;datanascimento&lt;/div&gt;&lt;div&gt;codigomodaidade FK&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="Oy84b5pCKv3BzQJfooqG-1" vertex="1">
+          <mxGeometry y="50" width="160" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="lk_jzQzjrd9rmkotaYS8-3" value="Campeonatos" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="110" width="160" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="lk_jzQzjrd9rmkotaYS8-4" value="codigo&amp;nbsp; &amp;nbsp;PK&lt;div&gt;premiacao&lt;/div&gt;&lt;div&gt;país&lt;/div&gt;&lt;div&gt;estado&lt;/div&gt;&lt;div&gt;cidade&lt;/div&gt;&lt;div&gt;data&lt;/div&gt;&lt;div&gt;chaveamento&lt;/div&gt;&lt;div&gt;inscricao&lt;/div&gt;&lt;div&gt;codigomodalidade&amp;nbsp; FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="lk_jzQzjrd9rmkotaYS8-3">
+          <mxGeometry y="50" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="lk_jzQzjrd9rmkotaYS8-5" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;exitX=0.987;exitY=0.68;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lk_jzQzjrd9rmkotaYS8-9" target="lk_jzQzjrd9rmkotaYS8-4">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="530" y="270" as="sourcePoint" />
+            <mxPoint x="630" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lk_jzQzjrd9rmkotaYS8-8" value="Modalidade" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="336" y="110" width="156" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="lk_jzQzjrd9rmkotaYS8-9" value="Nome&lt;div&gt;treinador&lt;/div&gt;&lt;div&gt;preparadorfisico&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="lk_jzQzjrd9rmkotaYS8-8">
+          <mxGeometry y="50" width="156" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lk_jzQzjrd9rmkotaYS8-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;entryX=0.988;entryY=0.208;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.006;exitY=0.583;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="lk_jzQzjrd9rmkotaYS8-9" target="Oy84b5pCKv3BzQJfooqG-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="230" y="290" as="sourcePoint" />
+            <mxPoint x="330" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

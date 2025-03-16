@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2024-05-15T20:02:07.283Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="cM9c4Ob-y09_yPtIpVDD" version="24.4.2" type="device">
+  <diagram name="Página-1" id="-4YQIEVA8jZAcwizEkaA">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-1" value="Cliente" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="130" width="160" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-2" value="codigo&amp;nbsp; &amp;nbsp;PK&lt;div&gt;nome&lt;/div&gt;&lt;div&gt;cpf&lt;/div&gt;&lt;div&gt;rg&lt;/div&gt;&lt;div&gt;telefone&lt;/div&gt;&lt;div&gt;endereco&lt;/div&gt;&lt;div&gt;idade&lt;/div&gt;&lt;div&gt;cidade&lt;/div&gt;&lt;div&gt;país&lt;/div&gt;&lt;div&gt;cadastro&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PKZxTsEDvDsW7Avq7anq-1">
+          <mxGeometry y="50" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-3" value="Compra" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="165" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-4" value="codigo&amp;nbsp; PK&lt;div&gt;notafiscal&lt;br&gt;&lt;div&gt;data&lt;/div&gt;&lt;div&gt;valor&lt;/div&gt;&lt;div&gt;totalcompra&lt;/div&gt;&lt;div&gt;codigocliente&amp;nbsp; FK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PKZxTsEDvDsW7Avq7anq-3">
+          <mxGeometry y="50" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-5" value="Fabricante" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="160" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-6" value="&lt;div&gt;codigo&amp;nbsp; &amp;nbsp;PK&lt;/div&gt;&lt;div&gt;nomendereco&lt;/div&gt;&lt;div&gt;cidade&lt;/div&gt;&lt;div&gt;estado&lt;/div&gt;&lt;div&gt;telefone&lt;/div&gt;&lt;div&gt;CNPJ&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PKZxTsEDvDsW7Avq7anq-5">
+          <mxGeometry y="50" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-7" value="Produto" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="200" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-8" value="codigo&amp;nbsp; PK&lt;div&gt;nome&lt;/div&gt;&lt;div&gt;quantidade&lt;/div&gt;&lt;div&gt;marca&lt;/div&gt;&lt;div&gt;modelo&lt;/div&gt;&lt;div&gt;preco&lt;/div&gt;&lt;div&gt;codigofaricante FK&lt;/div&gt;&lt;div&gt;codigocompra&amp;nbsp; &amp;nbsp;FK&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PKZxTsEDvDsW7Avq7anq-7">
+          <mxGeometry y="50" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-9" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PKZxTsEDvDsW7Avq7anq-2" target="PKZxTsEDvDsW7Avq7anq-4">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="360" y="320" as="sourcePoint" />
+            <mxPoint x="460" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;" edge="1" parent="1" source="PKZxTsEDvDsW7Avq7anq-7" target="PKZxTsEDvDsW7Avq7anq-4">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="360" y="420" as="sourcePoint" />
+            <mxPoint x="460" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="380" />
+              <mxPoint x="620" y="460" />
+              <mxPoint x="600" y="430" />
+              <mxPoint x="650" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PKZxTsEDvDsW7Avq7anq-12" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;" edge="1" parent="1" source="PKZxTsEDvDsW7Avq7anq-6" target="PKZxTsEDvDsW7Avq7anq-8">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="740" y="310" as="sourcePoint" />
+            <mxPoint x="840" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
